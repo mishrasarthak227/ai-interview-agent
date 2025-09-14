@@ -163,8 +163,10 @@ function App() {
       <header className="header">
         <div className="header-content">
           <div className="header-left">
-            <div className="logo">AI</div>
-            <div>
+            <div className="logo">
+              <span>AI</span>
+            </div>
+            <div className="brand-info">
               <h1 className="title">{jobTitle}</h1>
               <p className="subtitle">AI-Powered Interview Practice</p>
             </div>
@@ -209,13 +211,31 @@ function App() {
           {/* Question Card */}
           <div className="card">
             <div className="card-header">
-              <h2>Question {questionNum}</h2>
+              <div>
+                <h2>
+                  <span style={{ fontSize: '1.5rem', marginRight: 'var(--space-2)' }}>❓</span>
+                  Question {questionNum}
+                </h2>
+                <p className="card-subtitle">
+                  {currentQuestion ? 'Ready for your response' : 'Generate your next question'}
+                </p>
+              </div>
               <button
                 className={`btn btn-primary ${isLoading ? 'loading' : ''}`}
                 onClick={fetchQuestion}
                 disabled={isLoading}
               >
-                {isLoading ? 'Generating...' : 'New Question'}
+                {isLoading ? (
+                  <>
+                    <span className="spinner"></span>
+                    Generating...
+                  </>
+                ) : (
+                  <>
+                    <span>✨</span>
+                    New Question
+                  </>
+                )}
               </button>
             </div>
             <div className="card-content">
@@ -229,7 +249,7 @@ function App() {
                   <div className="question-text">{currentQuestion}</div>
                 ) : (
                   <div className="empty-state">
-                    <div className="empty-icon">💭</div>
+                    <div className="empty-icon">🤔</div>
                     <p>Click "New Question" to start your interview</p>
                   </div>
                 )}
@@ -256,16 +276,21 @@ function App() {
           {/* Interview History */}
           <div className="card">
             <div className="card-header">
-              <h3>Interview History</h3>
-              <p className="card-subtitle">
-                {history.length === 0 ? 'No questions answered yet' : `${history.length} questions answered`}
-              </p>
+              <div>
+                <h3>
+                  <span style={{ fontSize: '1.25rem', marginRight: 'var(--space-2)' }}>📝</span>
+                  Interview History
+                </h3>
+                <p className="card-subtitle">
+                  {history.length === 0 ? 'No questions answered yet' : `${history.length} questions answered`}
+                </p>
+              </div>
             </div>
             <div className="card-content">
               <div className="history-container">
                 {history.length === 0 ? (
                   <div className="empty-state">
-                    <div className="empty-icon">📭</div>
+                    <div className="empty-icon">📋</div>
                     <p>Your questions and answers will appear here</p>
                   </div>
                 ) : (
@@ -323,10 +348,19 @@ function App() {
           {/* Evaluation Panel */}
           <div className="card">
             <div className="card-header">
-              <h3>Final Evaluation</h3>
+              <div>
+                <h3>
+                  <span style={{ fontSize: '1.25rem', marginRight: 'var(--space-2)' }}>🎯</span>
+                  Final Evaluation
+                </h3>
+                <p className="card-subtitle">
+                  {evaluation ? 'AI assessment complete' : 'Complete interview for evaluation'}
+                </p>
+              </div>
               <div className="header-actions">
                 {evaluation && (
                   <button className="btn btn-secondary btn-sm" onClick={resetInterview}>
+                    <span>🔄</span>
                     New Interview
                   </button>
                 )}
@@ -335,7 +369,17 @@ function App() {
                   onClick={finishInterview}
                   disabled={history.length === 0 || isLoading}
                 >
-                  {isLoading ? 'Evaluating...' : 'Finish Interview'}
+                  {isLoading ? (
+                    <>
+                      <span className="spinner"></span>
+                      Evaluating...
+                    </>
+                  ) : (
+                    <>
+                      <span>✅</span>
+                      Finish Interview
+                    </>
+                  )}
                 </button>
               </div>
             </div>
@@ -364,16 +408,18 @@ function App() {
                   </div>
                   <div className="evaluation-actions">
                     <button className="btn btn-secondary" onClick={() => window.print()}>
+                      <span>🖨️</span>
                       Print Results
                     </button>
                     <button className="btn btn-primary" onClick={resetInterview}>
+                      <span>🔄</span>
                       Practice Again
                     </button>
                   </div>
                 </div>
               ) : (
                 <div className="empty-state">
-                  <div className="empty-icon">🎯</div>
+                  <div className="empty-icon">⏳</div>
                   <div>
                     <div>Ready for Evaluation</div>
                     <p>
@@ -499,8 +545,13 @@ function AudioRecorder({ uploadUrl, onAudioUploaded, disabled, isRecording, setI
   return (
     <div className="card">
       <div className="card-header">
-        <h3>Voice Response</h3>
-        <p className="card-subtitle">{status}</p>
+        <div>
+          <h3>
+            <span style={{ fontSize: '1.25rem', marginRight: 'var(--space-2)' }}>🎤</span>
+            Voice Response
+          </h3>
+          <p className="card-subtitle">{status}</p>
+        </div>
       </div>
       <div className="card-content">
         <div className="recorder-controls">
@@ -509,7 +560,17 @@ function AudioRecorder({ uploadUrl, onAudioUploaded, disabled, isRecording, setI
             onClick={isRecording ? stopRecording : startRecording}
             disabled={disabled || isUploading}
           >
-            {isRecording ? '⏹️ Stop Recording' : '🎤 Start Recording'}
+            {isRecording ? (
+              <>
+                <span>⏹️</span>
+                Stop Recording
+              </>
+            ) : (
+              <>
+                <span>🎤</span>
+                Start Recording
+              </>
+            )}
           </button>
 
           {audioBlob && !isRecording && (
@@ -518,13 +579,24 @@ function AudioRecorder({ uploadUrl, onAudioUploaded, disabled, isRecording, setI
               onClick={uploadAudio}
               disabled={isUploading}
             >
-              {isUploading ? '⏳ Processing...' : '📤 Submit Answer'}
+              {isUploading ? (
+                <>
+                  <span className="spinner"></span>
+                  Processing...
+                </>
+              ) : (
+                <>
+                  <span>📤</span>
+                  Submit Answer
+                </>
+              )}
             </button>
           )}
 
           {audioBlob && (
             <button className="btn btn-secondary" onClick={resetRecorder} disabled={isUploading}>
-              🔄 Reset
+              <span>🔄</span>
+              Reset
             </button>
           )}
         </div>
@@ -574,8 +646,13 @@ function PerformanceDashboard({ performance }) {
   return (
     <div className="card performance-dashboard">
       <div className="card-header">
-        <h3>📊 Performance Analytics</h3>
-        <p className="card-subtitle">Real-time interview metrics</p>
+        <div>
+          <h3>
+            <span style={{ fontSize: '1.25rem', marginRight: 'var(--space-2)' }}>📊</span>
+            Performance Analytics
+          </h3>
+          <p className="card-subtitle">Real-time interview metrics</p>
+        </div>
       </div>
       <div className="card-content">
         <div className="overall-score">

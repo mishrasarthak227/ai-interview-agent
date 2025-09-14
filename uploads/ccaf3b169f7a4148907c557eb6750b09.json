@@ -1,0 +1,16 @@
+{
+  "audio_path": "uploads/ccaf3b169f7a4148907c557eb6750b09.webm",
+  "transcript": "I love back-end engineering roles because back-end is the infrastructure of an application. It has all the logics and all the business requirements, all the optimization techniques required for an application to run smoothly.",
+  "timestamp": "2025-09-14T08:20:11.303360",
+  "converted_path": null,
+  "audio_metrics": {
+    "duration": 10.27,
+    "words_per_minute": 198.7,
+    "pace_score": 70.7,
+    "confidence_score": 70,
+    "tone_score": 70,
+    "word_count": 34,
+    "analysis_summary": "good pacing, fairly confident, good tone.",
+    "method": "simple_analysis"
+  }
+}

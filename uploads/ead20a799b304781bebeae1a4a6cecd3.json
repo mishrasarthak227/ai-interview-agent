@@ -1,0 +1,16 @@
+{
+  "audio_path": "uploads/ead20a799b304781bebeae1a4a6cecd3.wav",
+  "transcript": "I don't need to prove myself with examples or anything. Everybody knows my skills, my talents, what I can do on the pitch, because I'm the best in the world.",
+  "timestamp": "2025-09-13T20:31:29.354066",
+  "converted_path": null,
+  "audio_metrics": {
+    "duration": 6.59,
+    "words_per_minute": 273.3,
+    "pace_score": 21.7,
+    "confidence_score": 60,
+    "tone_score": 68,
+    "word_count": 30,
+    "analysis_summary": "work on pacing, build more confidence, good tone.",
+    "method": "simple_analysis"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "audio_path": "uploads/5628c8eb46cc4246b796c345a99434ee.webm",
+  "transcript": "I don't know, I need money, I am poor, I don't have anything to eat, I need money, and I am good in computer, so I think I can write code.",
+  "timestamp": "2025-09-13T21:20:32.459369",
+  "converted_path": null,
+  "audio_metrics": {
+    "duration": 6.98,
+    "words_per_minute": 266.5,
+    "pace_score": 23.4,
+    "confidence_score": 70,
+    "tone_score": 60,
+    "word_count": 31,
+    "analysis_summary": "work on pacing, fairly confident.",
+    "method": "simple_analysis"
+  }
+}

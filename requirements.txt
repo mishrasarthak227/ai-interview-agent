@@ -1,0 +1,10 @@
+crewai
+litellm
+python-dotenv
+fastapi
+uvicorn[standard]
+python-multipart
+aiofiles
+openai
+librosa
+numpy

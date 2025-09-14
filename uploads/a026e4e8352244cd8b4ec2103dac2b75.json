@@ -1,0 +1,16 @@
+{
+  "audio_path": "uploads/a026e4e8352244cd8b4ec2103dac2b75.wav",
+  "transcript": "Shut up. I deserve this job. I am good at this job.",
+  "timestamp": "2025-09-13T20:30:27.168957",
+  "converted_path": null,
+  "audio_metrics": {
+    "duration": 3.02,
+    "words_per_minute": 238.1,
+    "pace_score": 30.5,
+    "confidence_score": 50,
+    "tone_score": 60,
+    "word_count": 12,
+    "analysis_summary": "work on pacing, build more confidence.",
+    "method": "simple_analysis"
+  }
+}

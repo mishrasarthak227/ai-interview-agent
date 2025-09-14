@@ -1,0 +1,16 @@
+{
+  "audio_path": "uploads/259e0ba82e134414be1882102c825938.webm",
+  "transcript": "Because I'm the best. I'm the best player in the world.",
+  "timestamp": "2025-09-14T08:44:35.111863",
+  "converted_path": null,
+  "audio_metrics": {
+    "duration": 1.57,
+    "words_per_minute": 419.1,
+    "pace_score": 20,
+    "confidence_score": 50,
+    "tone_score": 60,
+    "word_count": 11,
+    "analysis_summary": "work on pacing, build more confidence.",
+    "method": "simple_analysis"
+  }
+}

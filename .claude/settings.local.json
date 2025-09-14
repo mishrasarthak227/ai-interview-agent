@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(npm run dev:*)",
+      "Bash(sudo npm run dev)",
+      "Bash(npm install)",
+      "Bash(curl:*)",
+      "Bash(brew install:*)",
+      "Bash(python3:*)",
+      "Read(//private/tmp/**)",
+      "Bash(chmod:*)",
+      "Bash(./ffmpeg -version)",
+      "Bash(unzip:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(node:*)",
+      "Bash(lsof:*)",
+      "Bash(find:*)",
+      "Bash(kill:*)",
+      "Bash(source:*)",
+      "Bash(uvicorn:*)",
+      "Bash(rm:*)",
+      "Bash(sudo rm:*)",
+      "Bash(npx vite:*)",
+      "Bash(pkill:*)",
+      "Bash(npm cache clean:*)",
+      "Read(//Users/sarm227/Downloads/**)",
+      "Bash(npm create:*)",
+      "Bash(npx:*)",
+      "Bash(sudo chown:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

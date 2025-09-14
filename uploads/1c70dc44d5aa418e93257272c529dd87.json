@@ -1,0 +1,16 @@
+{
+  "audio_path": "uploads/1c70dc44d5aa418e93257272c529dd87.webm",
+  "transcript": "Yes, because this is the best, I am the best, I have code, everything, I can use AI and no one is better than me.",
+  "timestamp": "2025-09-13T20:50:05.208671",
+  "converted_path": null,
+  "audio_metrics": {
+    "duration": 6.83,
+    "words_per_minute": 219.7,
+    "pace_score": 50.1,
+    "confidence_score": 60,
+    "tone_score": 60,
+    "word_count": 25,
+    "analysis_summary": "work on pacing, build more confidence.",
+    "method": "simple_analysis"
+  }
+}

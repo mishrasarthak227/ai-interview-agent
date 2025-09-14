@@ -1,0 +1,15 @@
+{
+  "audio_path": "uploads/0a21ae5a22de473daa21c302c560fafa.wav",
+  "transcript": "Because I love it, and I think I deserve it.",
+  "timestamp": "2025-09-13T20:28:02.252565",
+  "converted_path": null,
+  "audio_metrics": {
+    "error": "",
+    "duration": 0,
+    "words_per_minute": 0,
+    "pace_score": 0,
+    "confidence_score": 0,
+    "tone_score": 0,
+    "analysis_summary": "Audio analysis failed"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "audio_path": "uploads/8af0eb22074e45f99049220c637becb5.webm",
+  "transcript": "So usually I have solved database performances by caching or you know indexing and using stored procedures. Parameterized stored procedures you know to prevent SQL injections and instead of using subqueries I have improved them by using join, joining various tables. And the challenges faced like all of these like let's say mechanics like caching and indexing they all have their drawbacks and I mean they are not perfect so they have their drawbacks so that were the challenges I faced.",
+  "timestamp": "2025-09-14T08:22:23.161348",
+  "converted_path": null,
+  "audio_metrics": {
+    "duration": 25.09,
+    "words_per_minute": 193.7,
+    "pace_score": 73.2,
+    "confidence_score": 62,
+    "tone_score": 68,
+    "word_count": 81,
+    "analysis_summary": "good pacing, fairly confident, good tone.",
+    "method": "simple_analysis"
+  }
+}

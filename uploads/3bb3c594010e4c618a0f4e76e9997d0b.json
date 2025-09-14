@@ -1,0 +1,16 @@
+{
+  "audio_path": "uploads/3bb3c594010e4c618a0f4e76e9997d0b.webm",
+  "transcript": "So while working at Raid Game, I usually, we used to have multiple clients in our Cargain application. So the issues which we used to face is that every customer had different requirements. And so yeah, so we used to have, we used to write different code, many times we used to have different applications for different services for each customer. So I solved them, you know, by writing generic code, generic applications, which could have been used not only across various customers of my product, but various customers of different products as well. This saved a lot of development time and also time we used to need to go to production for a new customer. Yeah, so I have used GenAI in various different projects, like I recently used it in BCV in Soho, and I use it sometimes, I create, to create chatbots, and I also use it to, you know, to generate like some text from images by using OpenAI and Gemini APIs.",
+  "timestamp": "2025-09-14T08:24:15.089263",
+  "converted_path": null,
+  "audio_metrics": {
+    "duration": 36.93,
+    "words_per_minute": 269.7,
+    "pace_score": 22.6,
+    "confidence_score": 70,
+    "tone_score": 68,
+    "word_count": 166,
+    "analysis_summary": "work on pacing, fairly confident, good tone.",
+    "method": "simple_analysis"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "audio_path": "uploads/77e3814972a743da976b0f5a1a472100.webm",
+  "transcript": "I would love it and I think I deserve it.",
+  "timestamp": "2025-09-14T08:44:55.166120",
+  "converted_path": null,
+  "audio_metrics": {
+    "duration": 2.15,
+    "words_per_minute": 279.3,
+    "pace_score": 20.2,
+    "confidence_score": 50,
+    "tone_score": 70,
+    "word_count": 10,
+    "analysis_summary": "work on pacing, build more confidence, good tone.",
+    "method": "simple_analysis"
+  }
+}

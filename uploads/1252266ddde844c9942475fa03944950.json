@@ -1,0 +1,16 @@
+{
+  "audio_path": "uploads/1252266ddde844c9942475fa03944950.wav",
+  "transcript": "I am the best content creator in this world. I am an idiot because I'm the best and nothing is better than this.",
+  "timestamp": "2025-09-13T20:30:58.705524",
+  "converted_path": null,
+  "audio_metrics": {
+    "duration": 6.68,
+    "words_per_minute": 206.7,
+    "pace_score": 54.4,
+    "confidence_score": 60,
+    "tone_score": 60,
+    "word_count": 23,
+    "analysis_summary": "work on pacing, build more confidence.",
+    "method": "simple_analysis"
+  }
+}

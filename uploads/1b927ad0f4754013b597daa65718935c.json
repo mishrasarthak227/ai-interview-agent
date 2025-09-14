@@ -1,0 +1,16 @@
+{
+  "audio_path": "uploads/1b927ad0f4754013b597daa65718935c.webm",
+  "transcript": "I have over three years of experience in back-end development and in various frameworks like .NET, Spring Boot and Node.js. So, I also love this field because it contains all the business logic and the optimizations and I believe unique experiences because I have an experience in multiple frameworks, multiple databases whether it is SQL or NoSQL and also Gen AI. I also have experience in building Gen AI apps which is the industry trend these days.",
+  "timestamp": "2025-09-14T08:21:13.325651",
+  "converted_path": null,
+  "audio_metrics": {
+    "duration": 20.29,
+    "words_per_minute": 227.7,
+    "pace_score": 33.1,
+    "confidence_score": 70,
+    "tone_score": 78,
+    "word_count": 77,
+    "analysis_summary": "work on pacing, fairly confident, professional tone.",
+    "method": "simple_analysis"
+  }
+}
